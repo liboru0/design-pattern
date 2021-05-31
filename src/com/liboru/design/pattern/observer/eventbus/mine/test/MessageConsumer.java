@@ -1,10 +1,7 @@
-package com.liboru.design.pattern.observer.eventbus.guava;
+package com.liboru.design.pattern.observer.eventbus.mine.test;
 
-import com.google.common.eventbus.Subscribe;
+import com.liboru.design.pattern.observer.eventbus.mine.Subscribe;
 
-/**
- * 消息监听
- */
 public class MessageConsumer {
 
     @Subscribe

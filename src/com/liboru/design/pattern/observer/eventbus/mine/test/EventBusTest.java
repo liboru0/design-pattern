@@ -1,12 +1,12 @@
-package com.liboru.design.pattern.observer.eventbus.guava;
+package com.liboru.design.pattern.observer.eventbus.mine.test;
 
-import com.google.common.eventbus.EventBus;
+import com.liboru.design.pattern.observer.eventbus.mine.EventBus;
 
 public class EventBusTest {
 
     public static void main(String[] args) throws InterruptedException {
 
-        EventBus eventBus = new EventBus("test");
+        EventBus eventBus = new EventBus();
         eventBus.register(new MessageListener());
         eventBus.register(new MessageConsumer());
         System.out.println("register success");
