@@ -8,6 +8,7 @@ public class EventBusTest {
 
         EventBus eventBus = new EventBus("test");
         eventBus.register(new MessageListener());
+        eventBus.register(new MessageConsumer());
         System.out.println("register success");
         Thread.sleep(1000);
         eventBus.post(new Message("消息"));
